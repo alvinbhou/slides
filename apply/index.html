@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Apply MSCS Slides</title>
+    <link rel="stylesheet" type="text/css" href="/lib/toast.css" />
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Product+Sans);
+      @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
       body {
-        font-family: 'Droid Serif';
+        font-family: 'Product Sans', 'Noto Sans TC';
       }
       h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
+        font-family: 'Product Sans', 'Noto Sans TC';
         font-weight: 400;
         margin-bottom: 0;
       }
-      .remark-slide-content h1 { font-size: 3em; }
-      .remark-slide-content h2 { font-size: 2em; }
+      h3 {
+        margin-block-start: 0.5em;
+      }
+      .remark-slide-content {
+        padding: 1em 3em 1em 3em;
+      }
+      .remark-slide-content h1 { font-size: 2.5em; }
+      .remark-slide-content h2 { font-size: 1.8em; }
       .remark-slide-content h3 { font-size: 1.6em; }
       .footnote {
         position: absolute;
@@ -25,6 +34,8 @@
       }
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
+      .green{ color: #4CAF50;}
+      .blue{ color: #4FC3F7; }
       .large { font-size: 2em; }
       a, a > code {
         color: #4FC3F7;
@@ -118,17 +129,51 @@
       /* Two-column layout */
       .left-column {
         color: #777;
-        width: 20%;
+        width: 25%;
         height: 92%;
         float: left;
       }
-        .left-column h2:last-of-type, .left-column h3:last-child {
-          color: #000;
-        }
+      .left-column h2:last-of-type, .left-column h3:last-child {
+        color: #000;
+      }
       .right-column {
         width: 75%;
         float: right;
         padding-top: 1em;
+      }
+
+      /* first slide customization */
+      .author {
+        font-size: 1.5em;
+      }
+      /* About Me page customization */
+      .avatar img{
+        width: 150px;
+        border-radius: 50%;
+      }
+      .avatar{
+        margin-left: -4px;
+      }
+      /* custom date */
+      .date {
+        color: #777;
+        float: right;
+      }
+      /* custom timeline */
+      .timeline img{
+        width: 100%;
+        margin-top: 25%;
+      }
+      /* custom github images */
+      .github-overview img{
+        width: 100%;
+      }
+      .ntucoursebot-overview img{
+        height:500px;
+      }
+      /* custom CV img */
+      .cv img{
+        height: 540px;
       }
 
       .hljs-keyword {
@@ -143,58 +188,324 @@
         layout: true
         class: center, middle, inverse
         ---
-        # M.S. Computer Science: How to apply？
+        # M.S. Computer Science
+        # How to apply？
         ### [台大資管該如何申請CS Master]
-        .footnote[Go directly to [project site](https://github.com/gnab/remark)]
-        ---
-        ## What is it and why should I be using it?
+        .footnote.author[[Alvin Hou](https://cryolite.me/) @ Stanford MSCS  ]
+        <!-- .footnote[Slide link [cryolite.me/slides/apply](https://cryolite.me/slides/apply)] -->
         ---
         layout: false
+        class: center, middle
+        # Slides link
+        # [cryolite.me/slides/apply](https://cryolite.me/slides/apply)
+        ![](https://i.imgur.com/4vkKVQq.png)
+        ---
+        template: inverse
+        # About Me
+        ---
         .left-column[
-          ## What is it?
+          ## About Me
+          .avatar[![image](https://i.imgur.com/YiYYLRO.jpg)]
+        ]
+        ---
+        .left-column[
+          ## About Me
+          ## NTUIM
+          .avatar[![image](https://i.imgur.com/YiYYLRO.jpg)]
         ]
         .right-column[
-          A simple, in-browser, Markdown-driven slideshow tool targeted at people who know their way around HTML and CSS, featuring:
+          ## B03705006 侯舜元
         
-        - Markdown formatting, with smart extensions
+          地下微積分助教 (2015-2016)
         
-        - Presenter mode, with cloned slideshow view
-        
-        - Syntax highlighting, supporting a range of languages
-        
-        - Slide scaling, thus similar appearance on all devices / resolutions .red[*]
-        
-        - Touch support for smart phones and pads, i.e. swipe to navigate slides
-        
-        .footnote[.red[*] At least browsers try their best]
+          資管營課程組負責人 (2016)
+
+          書卷獎 (2016)
+
+          搶鮮大賽1st prize /w 小傑 (2016)
+
+          系壘/系羽 (滑水隊員)
         ]
+
+        ---
+        .left-column[
+          ## About Me
+          ## NTUIM
+          ## Work Exp.
+          .avatar[![image](https://i.imgur.com/YiYYLRO.jpg)]
+        ]
+        .right-column[
+          ## Work Experience
+          ### Asus
+          Software Engineering Intern @ AICS      .date[May 2019 - Present]
+
+          ### IBM
+          Software Engineering Intern @ UX Team  .date[Jul 2017 - Jun 2018]
+
+          ### ITRI
+          Deep Learning Research Intern @ 資通所  .date[Aug 2017 - Feb 2018]
+
+          Software Engineering Intern @ 資通所  .date[Jul 2016 - Jun 2017]
+
+        ]
+        ---
+        .left-column[
+          ## About Me
+          ## NTUIM
+          ## Work Exp.
+          ## Grades
+          .avatar[![image](https://i.imgur.com/YiYYLRO.jpg)]
+        ]
+        .right-column[
+          ## GPA
+          ### Overall: 3.95 / 4.3, Major: 4.05 / 4.3
+          
+          ## GRE
+          ### 325 (V 157 / Q 168 / AW 3.5)
+
+          ## TOEFL
+          ### 108 (R 30 / L 29 / W 26 / S 23)
+        ]
+        ---
+        template: inverse
+        # Application Result
+        ---
+        
+        .pull-left[
+          ## .green[Admission]
+          UCSD MS CS (2/21)
+
+          Columbia MS CS (3/9)
+
+          **Stanford MS CS (3/15) **
+
+          Cornell M.Eng in CS (4/4)
+
+          CMU-SV MS SE 2020 Spring (4/4)
+        ]
+
+        .pull-right[
+          ## .red[Rejection]
+
+          CMU MS ML (2/2)
+
+          Princeton MS CS (2/7)
+
+          CMU MS CS (3/4)
+
+          UIUC MCS (3/16)
+
+          UC Berkeley M.Eng in CS (3/22)
+
+          UT-Austin MS CS (3/23)
+
+          CMU MCDS (4/4)
+
+          UMichigan MS CS (4/10)
+
+          UCLA MS CS (4/10)
+
+          USC MS CS (4/28)
+
+          UCI MS CS (5/2)
+        ] 
+        ---
+        template: inverse
+        # Timeline
+        ---
+        # Timeline
+        .timeline[![](https://i.imgur.com/kI893Yh.png)]
+        ---
+        template: inverse
+        # How to get started
+        ### [大四之前可以做什麼準備？]
+        ---
+        .left-column[
+          ## GPA
+        ]
+        .right-column[
+          ## GPA
+          - 申請的門票
+
+          - 顧好GPA，刷好刷滿
+
+          - 千萬別被當，寧願停修、寫學生報告書
+
+
+          ## GPA 劃分表
+          #### 申請正統MSCS Program.red[*]
+          * 3.9+: 挑戰Tier 1學校，衝刺top15
+
+          * 3.7~3.9: 夢想top15，衝刺top25
+
+          * 3.5~3.7: 衝刺top30
+
+          *  < 3.5 : 衝刺top40
+
+          .footnote[.red[*] 大略粗估正統CS難度，其他Program校名難度不一]
+
+        ]
+        ---
+        .left-column[
+          ## GPA
+          ## 選課
+        ]
+        .right-column[
+        ### 資管系的優勢
+        
+        - CS-Related 修課相對其他轉專業算很完善
+
+        - 建議去修 `Linear Algebra`, `Probability`, `System Programming`
+
+        
+        ### 電資學院的課
+        
+        - 多修課，用來彌補不是本科的缺點，可於SOP強調CS修課扎實
+
+        ```remark
+        During my undergraduate study, I studied computer science
+        broadly and received straight A's in all CS coursework. 
+        
+        Moreover, I excelled in graduate-level courses such as
+        Applied Deep Learning, Information Retrieval and Text Mining, 
+        Digital Speech Processing. 
+        ```
+        - 找自己有興趣的領域，修課是背景知識最好的證明
+
+        - 好課要修，GPA也要顧
+
+        - 修課名很潮的水課
+        
+        ]
+        ---
+        .left-column[
+          ## GPA
+          ## 選課
+          ## 實習
+        ]
+        .right-column[
+        ### 找實習
+        
+        - 找知名外商實習
+
+        - 累積 Research Experience (中研院)
+
+        - 用 Work Experience來彌補缺乏的 Research Experience，有助於申請就業導向的Program
+
+        - 找可以Remote的公司 (工研院/IBM)
+
+        - `刷履歷`
+        ]
+        ---
+        .left-column[
+          ## GPA
+          ## 選課
+          ## 實習
+          ## Projects
+        ]
+        .right-column[
+        ### Github
+        .github-overview[![Image](https://i.imgur.com/9JojdSF.png)]
+        ]
+        ---
+        .left-column[
+          ## GPA
+          ## 選課
+          ## 實習
+          ## Projects
+        ]
+        .right-column[
+        ### Well-documented Projects
+        .github-overview[![Image](https://i.imgur.com/whDRC5O.png)]
+        ]
+        ---
+        .left-column[
+        ## GPA
+        ## 選課
+        ## 實習
+        ## Projects
+        ]
+        .right-column[
+        ### Personal Website
+        .github-overview[![Image](https://i.imgur.com/1B3lAAx.png)]
+        ]
+        ---
+        .left-column[
+          ## GPA
+          ## 選課
+          ## 實習
+          ## Projects
+        ]
+        .right-column[
+        ### Side Projects
+        .pull-left[
+          .ntucoursebot-overview[![Image](pres.gif)]
+        ]
+        .pull-right[
+        <!-- .ntucoursebot-overview[![Image](https://i.imgur.com/nfA8RiY.png)] -->
+
+        .ntucoursebot-overview[![Image](https://i.imgur.com/6wwb3zF.png)]
+        ]
+        ]
+        ---
+        template: inverse
+        # Preparing Grad School Application
+        ---
+        ## English Tests
+        ### GRE
+        - 建議門檻: 320, Q >= 167, AW 3.0
+        - 準備時間1-2 個月
+        - 刷題，背單字，可以不用補習
+        - $205 /次，延期 $50, 寄成績單$27
+        - UIUC, CMU ETC, 歐洲學校不用GRE
+
+        ### TOEFL
+        - 建議門檻: 100, Speaking >= 23 （UCLA/Cornell等篩口說）
+        - 考完GRE再考TOEFL
+        - 勤練口說
+        - **新制度，越刷越高，ETS發大財**
+        - $190 /次， 寄成績單$20
+        ---
+        ## Letter of Recommendation
+        - ### 資管系教授都很友善，都可以找他們聊聊！
+        - ### 實習/工作主管建議找有美國Phd的
+        - ### 找了解你的人
+        - ### 感謝 孔令傑、蔡益坤、李瑞庭、魏志平教授
+        ---
+        class: middle, center
+        ## CV
+        .cv[![Image](https://i.imgur.com/US0s1m9.png)]
+        ---
+        ## SOP
+        ```remark
+        # 第一段
+        開場破題，強調自身優點，講出研究動機和領域
+
+        # 第二段
+        強調修課的深度廣度
+
+        # 第三段
+        工研院實習經驗，強調研究經驗
+
+        # 第四段
+        IBM實習+Volunteer Project經驗，CS在實務方面的應用
+
+        # 第五段
+        Side Project 經驗，強調對新領域研究和開發的熱誠
+
+        # 第六段
+        客製化段落，為什麼想來念這個Program，這學校多好多讚
+
+        # 第七段
+        感恩，拜託收我吧
+        ```
         ---
         .left-column[
           ## What is it?
           ## Why use it?
         ]
         .right-column[
-        If your ideal slideshow creation workflow contains any of the following steps:
-        
-        - Just write what's on your mind
-        
-        - Do some basic styling
-        
-        - Easily collaborate with others
-        
-        - Share with and show to everyone
-        
-        Then remark might be perfect for your next.red[*] slideshow!
-        
-        .footnote[.red[*] You probably want to convert existing slideshows as well]
-        ]
-        ---
-        .left-column[
-          ## What is it?
-          ## Why use it?
-        ]
-        .right-column[
-        As the slideshow is expressed using Markdown, you may:
+        ### 資管系 As the slideshow is expressed using Markdown, you may:
         
         - Focus on the content, expressing yourself in next to plain text not worrying what flashy graphics and disturbing effects to put where
         
@@ -518,16 +829,28 @@
             
 
     </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
+   
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"> </script>
     <script>
       
-      var slideshow = remark.create({
+      let slideshow = remark.create({
         //   highlightStyle: 'monokai',
           highlightLanguage: 'remark',
           highlightLines: true
         }) ;
-    
+      
+      let roateDetect = () => {
+        if (screen.width < screen.height){
+          const div = document.createElement('div')
+          div.className = 'toast';
+          div.innerHTML = 'Rotate the screen for better user experience!' 
+          setTimeout(function(){
+            div.remove()
+          }, 10000);
+          document.body.appendChild(div);  
+        }
+      };
+      roateDetect();
     </script>
   </body>
 </html>

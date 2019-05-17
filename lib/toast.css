@@ -1,0 +1,19 @@
+.toast {
+    position: fixed;
+    top: 5%;
+    /* bottom: 5%; */
+    max-height: 125px;
+    left: 50%;
+    padding: 3%;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transform: translate(-50%, 0);
+    animation: fadein 3s;
+    font-size: 3em;
+    border-radius: 20px;
+}
+@keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 5%; opacity: 1;}
+}
