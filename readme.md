@@ -2,4 +2,4 @@
 Ａ place to save presentation slides
 
 ## Links
-[Apply CS Slides](apply/readme.md)
+[Apply CS](apply/readme.md) | [Slides](cryolite.me/slides/apply)
