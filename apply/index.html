@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Apply MSCS Slides</title>
-    <link rel="stylesheet" type="text/css" href="/lib/toast.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/toast.css" />
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
@@ -35,10 +35,13 @@
       li p { line-height: 1.25em; }
       .red { color: #fa0000; }
       .green{ color: #4CAF50;}
-      .blue{ color: #4FC3F7; }
+      .blue{ color: #039BE5; }
+      .black {color: #000000}
+      .yellow {color: #F9A825;}
+      .dark-blue {color:#303F9F}
       .large { font-size: 2em; }
       a, a > code {
-        color: #4FC3F7;
+        color: #039BE5;
         text-decoration: none;
       }
       
@@ -60,7 +63,7 @@
         clear: both;
       }
       .tier code div{
-        font-size: 20px!important;
+        font-size: 22px!important;
       }
       .t1-col {
         float: left;
@@ -175,7 +178,21 @@
       .cv img{
         height: 540px;
       }
+      /* custom ranking CV */
+      .ranking img{
+        height: 530px;
+      } 
 
+      /* custom school names */
+      .school-name {
+        font-size: 1.5em;
+      }
+
+      /* custom streamer img */
+      .streamer img{
+        height: 250px;
+        float: right;
+      }
       .hljs-keyword {
         font-weight: 400 !important; 
       }
@@ -188,7 +205,7 @@
         layout: true
         class: center, middle, inverse
         ---
-        # M.S. Computer Science
+        # MS Computer Science
         # How to apply？
         ### [台大資管該如何申請CS Master]
         .footnote.author[[Alvin Hou](https://cryolite.me/) @ Stanford MSCS  ]
@@ -455,7 +472,7 @@
         ### GRE
         - 建議門檻: 320, Q >= 167, AW 3.0
         - 準備時間1-2 個月
-        - 刷題，背單字，可以不用補習
+        - [刷題](http://grev3.kmf.com/jijing/index?source=t)，背單字，可以不用補習
         - $205 /次，延期 $50, 寄成績單$27
         - UIUC, CMU ETC, 歐洲學校不用GRE
 
@@ -476,7 +493,12 @@
         ## CV
         .cv[![Image](https://i.imgur.com/US0s1m9.png)]
         ---
-        ## SOP
+        ## Statement of Purpose
+        .left-column[
+        Does this even matter?
+        ]
+
+        .right-column[
         ```remark
         # 第一段
         開場破題，強調自身優點，講出研究動機和領域
@@ -488,10 +510,10 @@
         工研院實習經驗，強調研究經驗
 
         # 第四段
-        IBM實習+Volunteer Project經驗，CS在實務方面的應用
+        IBM實習+Volunteer Project經驗，強調CS在實務方面的應用
 
         # 第五段
-        Side Project 經驗，強調對新領域研究和開發的熱誠
+        Side Project+Hackathon經驗，強調對新領域研究和開發的熱誠
 
         # 第六段
         客製化段落，為什麼想來念這個Program，這學校多好多讚
@@ -499,334 +521,324 @@
         # 第七段
         感恩，拜託收我吧
         ```
-        ---
-        .left-column[
-          ## What is it?
-          ## Why use it?
-        ]
-        .right-column[
-        ### 資管系 As the slideshow is expressed using Markdown, you may:
-        
-        - Focus on the content, expressing yourself in next to plain text not worrying what flashy graphics and disturbing effects to put where
-        
-        As the slideshow is actually an HTML document, you may:
-        
-        - Display it in any decent browser
-        
-        - Style it using regular CSS, just like any other HTML content
-        
-        - Use it offline!
-        
-        As the slideshow is contained in a plain file, you may:
-        
-        - Store it wherever you like; on your computer, hosted from your Dropbox, hosted on Github Pages alongside the stuff you're presenting...
-        
-        - Easily collaborate with others, keeping track of changes using your favourite SCM tool, like Git or Mercurial
         ]
         ---
         template: inverse
-        
-        ## How does it work, then?
+        # Programs
+        ### [該怎麼選校選Program]
         ---
-        name: how
-        
         .left-column[
-          ## How does it work?
-        ### - Markdown
+          ## Ranking
         ]
         .right-column[
-        A Markdown-formatted chunk of text is transformed into individual slides by JavaScript running in the browser:
-        
-        ```remark
-        # Slide 1
-        This is slide 1
-        
-        ---
-        
-        # Slide 2
-        This is slide 2
-        ```
-        
-        .slides[
-          .first[
-          ### Slide 1
-          This is slide 1
-          ]
-          .second[
-          ### Slide 2
-          This is slide 2
-          ]
-        ]
-        
-        Regular Markdown rules apply with only a single exception:
-        
-          - A line containing three dashes constitutes a new slide
-          (not a horizontal rule, `&lt;hr /&gt;`)
-        
-        Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
+          ### US News
+          .pull-left[
+         .ranking[![Image](https://i.imgur.com/iuLWL0N.png)]
+         ]
+         <!-- .pull-right[
+         .ranking[![Image](https://i.imgur.com/Kfja5ie.png)]
+         ] -->
         ]
         ---
         .left-column[
-          ## How does it work?
-          ### - Markdown
-          ### - Inside HTML
+          ## Ranking
+          ## Tiers
         ]
         .right-column[
-        A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
-        
-        ```xml
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-          &lt;head&gt;
-            &lt;style type="text/css"&gt;
-              /* Slideshow styles */
-            &lt;/style&gt;
-          &lt;/head&gt;
-          &lt;body&gt;
-        *    &lt;textarea id="source"&gt;
-              &lt;!-- Slideshow Markdown --&gt;
-            &lt;/textarea&gt;
-        *    &lt;script src="remark.js"&gt;
-            &lt;/script&gt;
-            &lt;script&gt;
-        *      var slideshow = remark.create();
-            &lt;/script&gt;
-          &lt;/body&gt;
-        &lt;/html&gt;
-        ```
-        
-        You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
-        ]
-        ---
-        template: inverse
-        
-        ## Of course, Markdown can only go so far.
-        ---
-        .left-column[
-          ## Markdown extensions
-        ]
-        .right-column[
-
-        .pull-left[
-        - Slide properties, for na
-
-        - Slide properties, for na
-        ]
-
-        .pull-right[
-        - Slide properties, for na
-        
-        - asd
-        ]
-
-        To help out with slide layout and formatting, a few Markdown extensions have been included:
-        
-        - Slide properties, for naming, styling and templating slides
-        
-        - Content classes, for styling specific content
-        
-        - Syntax highlighting, supporting a range of languages
-        ]
-        
-        ---
-        .left-column[
-          ## Markdown extensions
-          ### - Slide properties
-        ]
-        .right-column[
-        Initial lines containing key-value pairs are extracted as slide properties:
-        
-        ```remark
-        name: agenda
-        class: middle, center
-        
-        # Agenda
-        
-        The name of this slide is {{ name }}.
-        ```
-        
-        Slide properties serve multiple purposes:
-        
-        * Naming and styling slides using properties `name` and `class`
-        
-        * Using slides as templates using properties `template` and `layout`
-        
-        * Expansion of `{{ property }}` expressions to property values
-        
-        See the [complete list](https://github.com/gnab/remark/wiki/Markdown#slide-properties) of slide properties.
-        ]
-        ---
-        .left-column[
-          ## Markdown extensions
-          ### - Slide properties
-          ### - Content classes
-        ]
-        .right-column[
-        Any occurences of one or more dotted CSS class names followed by square brackets are replaced with the contents of the brackets with the specified classes applied:
-        
-        ```remark
-        .footnote[.red.bold[*] Important footnote]
-        ```
-        
-        Resulting HTML extract:
-        
-        ```xml
-        &lt;span class="footnote"&gt;
-          &lt;span class="red bold"&gt;*&lt;/span&gt; Important footnote
-        &lt;/span&gt;
-        ```
-        ]
-        ---
-        .left-column[
-          ## Markdown extensions
-          ### - Slide properties
-          ### - Content classes
-          ### - Syntax Highlighting
-        ]
-        .right-column[
-        Code blocks can be syntax highlighted by specifying a language from the set of [supported languages](https://github.com/gnab/remark/wiki/Configuration#highlighting).
-        
-        Using [GFM](http://github.github.com/github-flavored-markdown/) fenced code blocks you can easily specify highlighting language:
-        
+        ### CS Ranking
         .t1-col.tier[
-            ```
-            Tier 1
+            ```python
+            # Tier 1
             CMU
             Berkeley
             Stanford
+            Princeton
             ```
         ]
 
         .t2-col.tier[
-            ```
-            Tier 2
-            UIUC            UW Madison
-            Cornell
-            Columbia
-            UT Austin
-            U Michigan
-            Gerogia Tech
-            UCSD
-            UCLA
+          ```python
+            # Tier 2
+            UIUC            Cornell 
+            UT Austin       Columbia
+            Gerogia Tech    U Michigan 
+            UCSD            UW Madison
+            UCLA            Harvard
+            Rice            Purdue
+            Maryland        USC
+            Brown           UPenn
             ```
         ]
 
         .t3-col.tier[
-            ```
-            Tier 1
-            CMU
-            Berkeley
-            Stanford
-            ```
+          ```python
+          #　Tier 3
+          UCI, UCD, UCSB, ASU, NYU, UMT...
+          ```
         ]
 
+        .red[*] 無CS Master的學校: MIT, UWashington, CalTech
+        ]
+        ---
+        .left-column[
+          ## Ranking
+          ## Tiers
+          ## Programs
+        ]
+        .right-column[
+          ### MS CS
+          Master of Science in Computer Science
+          ### MCS
+          (Professional) Master in Computer Science
+          ### MEng in CS
+          Master of Engineer in Computer Science
+          ### MS SE
+          Master of Science in Software Engineer
+          ### MCDS
+          Master of Computational in Data Science
+        ]
+        ---
+        .left-column[
+          ## Ranking
+          ## Tiers
+          ## Programs
+          .dark-blue[藍色]Tier1
+
+          .black[黑色]Tier2
+
+          .red[紅色]保底
+        ]
+        .right-column[
+          .pull-left[
+          ## .green[Admission]
+          UCSD MS CS (2/21)
+
+          Columbia MS CS (3/9)
+
+          .dark-blue[Stanford MS CS (3/15) ]
+
+          Cornell M.Eng in CS (4/4)
+
+          CMU-SV MS SE 2020 Spring (4/4)
+
+         
+        ]
+
+        .pull-right[
+          ## .red[Rejection]
+
+          .dark-blue[CMU MS ML (2/2)]
+
+          .dark-blue[Princeton MS CS (2/7)]
+
+          .dark-blue[CMU MS CS (3/4)]
+
+          UIUC MCS (3/16)
+
+          .dark-blue[UC Berkeley M.Eng in CS (3/22)]
+
+          UT-Austin MS CS (3/23)
+
+          .dark-blue[CMU MCDS (4/4)]
+
+          UMichigan MS CS (4/10)
+
+          UCLA MS CS (4/10)
+
+          USC MS CS (4/28)
+
+          .red[UCI MS CS (5/2)]
+          ] 
+        ]
+        ---
+        .left-column[
+          ## Ranking
+          ## Tiers
+          ## Programs
+        ]
+        .right-column[
+        .pull-left[
+        ### 研究型
+        - .school-name[Princeton]
+        - .school-name[CMU (CS/ML)]
+        - .school-name[UT-Austin]
+
+        ### 修課型
+        - .school-name[Columbia]
+        - .school-name[Stanford]
+        - .school-name[CMU (DS)]
+        - .school-name[UMich]
+        - .school-name[UCSD]
+        - .school-name[USC]
+        - .school-name[UCI]
+        ]
+
+        .pull-right[
+        ### 純就業導向.red[*]
+        - .school-name[Cornell MEng]
+        - .school-name[UC Berkeley MEng]
+        - .school-name[UIUC MCS]
+        .footnote[.red[*]無thesis option]
+        ]
+
+        ]
+        ---
+        .left-column[
+          ## Ranking
+          ## Tiers
+          ## Programs
+        ]
+        .right-column[
+        ### 對轉專業友善
+        - .school-name[UCSD]
+        - .school-name[Columbia]
+        - .school-name[CMU-SV]
+        - .school-name[Rice]
+          
+        ### 三圍控
+        - .school-name[Ivy League (Cornell/Columbia/UPenn..)]
+        - .school-name[UCSD]
+        - .school-name[USC]
+        ]
+        ---
+        ## UCSD MSCS
+        - CS Department不斷擴招，近年聘許多年輕教授
+        - FB重點學校
+        - 地理位置優
+        - 一屆200+人
+        - Tier 2裡頂尖而且CP值高的Program
+        ```remark
+        What are your research interests?
+        What is your research experience (including publications)?
+        Why are you interested in conducting research with our faculty? (choose 2)
+        ```
+        .streamer[![Image](https://i.imgur.com/sV2gFXh.jpg)]
+
+        ---
+        ## Columbia MSCS
+        - 常春藤光環，一屆200人
+        - 有中國人說課程偏水，但也有剛畢業學長說看修課選擇
+        - 今年第一次有Video Interview，rolling制 （沒收到就是被拒了）
+
+        ```remark
+        1. If you can pick up a skill in an instant, what will it be?
+        2. Do you want to participate in research in MS program? What do you want to achieve?
+        3. Do you have any work/internship experience? What role did it play in applying MS?
+        4. Describe a work/school situation you had when honesty isn’t the best course
+         of option.
+        5. What do you hope to gain from this program?
+        ```
+        - 站坑費$4000，一個禮拜內要決定，斂財不手軟
+        - 學費生活費很貴，可能要8-10萬鎂一年
       
-        
-        A number of highlighting [styles](https://github.com/gnab/remark/wiki/Configuration#highlighting) are available, including several well-known themes from different editors and IDEs.
-        
-        ]
         ---
-        .left-column[
-          ## Presenter mode
-        ]
-        .right-column[
-        To help out with giving presentations, a presenter mode comprising the
-        following features is provided:
-        
-        - Display of slide notes for the current slide, to help you remember
-          key points
-        
-        - Display of upcoming slide, to let you know what's coming
-        
-        - Cloning of slideshow for viewing on extended display
+        ## Stanford MSCS
+        - 樂透大S
+        - 注重diversity，喜歡課外活動豐富的學生
+        - 都市傳說: 喜歡收愛創業或第一名畢業的學生
+        - 修課型(不能往上念Phd)，一屆200人，申請人數3000+
 
-        ```
-            First Header  | Second Header
-            ------------- | -------------
-            Content Cell  | Content Cell
-            Content Cell  | Content Cell
-        ```
-        ]
+        ## Cornell M.Eng 
+        - Cornell MSCS 一屆只收4人(Speaking > 28)
+        - 就業導向的program，在校本部上課
+        - 一般是9個月，可以延到一年半找實習
+        - 學費 $56550/year (9 months)
+
+        ## UIUC MCS
+        - MSCS 是有獎學金的Master Program，研究型
+        - 自知沒什麼機會改丟MCS碰碰運氣
+        ---
+        ## CMU - School of Computer Science (SCS)
+        - .school-name[.red[MSCS]]  -- 熱門正統CS Program，錄取 70~100，申請 2000人
+        - .school-name[.red[MSML]]  -- 沒有paper沒什麼機會，錄取20~30，申請 1200人
+        - .school-name[.red[MCDS]]  -- 就業王牌Program，錄取80~100，申請 1500人 (LTI Dept.)
+        - .school-name[MSCV]  -- CV非常熱門的Program，bar很高
+        - .school-name[MHCI]  -- 做UX/Design Thinking，九個月Program，錄取率較高
+        - .school-name[MITS]  -- 一年Program（不能實習），課表自由，一屆10-20人，就業率FAANG 50%
+        - .school-name[MSE]   -- Master of Software Engineering, 一定要有2年工作經驗 
+        - .school-name[MSIT-SE]   -- 建議要有1年工作經驗
+        - .school-name[MIIS]  -- M.S. in Intelligent Information Systems (LTI Dept.)
+        - .school-name[MSIN]  -- M.S. in Information Networking (INI Dept.)
+        - .school-name[MSIS]  -- M.S. in Information Security (INI Dept.)
+        ---
+        ## CMU-SV MS Software Engineer (ECE)
+        - CMU矽谷就業Program，對台灣人發的AD一直都不少
+        - 掛在ECE Department下，課程比SCS下水，可以好好刷題找工作
+        - 實習就業表現很好
+        - 不太看GPA，適合程式底子硬的即戰力碼農
+        - 教室人塞不下我被轉到2020 Spring
+
+        ## Princeton MSCS 
+        - 做理論的頂級名校，研究型的收很少，夢想區
+
+        ## UT-Austin MSCS 
+        - 學費便宜，排名高，研究導向收的人少(30-40人)
+        - 以往不收轉專業學生，今年有開放
+        ---
+       
+
+        ## UC Berkeley M.Eng
+        - MSCS只收Berkeley自己學校的
+        - 九個月的就業導向Program，不能實習
+        - 視情況有些人會收到面試，據說跟會不會錄取無關
+
+        ## U Michigan MSCS
+        - 傳統理工名校，我申AI/HCI track
+        - 一屆200人，學費貴
+        - School of Information做UX/HCI蠻有名的，有興趣可以申請MS in Information
+        
+        ## UCLA MSCS 
+        - 以往不太收台灣人，不過近幾年有2個新的台灣教授，可能會有所改變
+        - 2000人申請錄200人，一屆100人, China 44, US 32, India 26, Taiwan 0 (2016)
+        - 有走下坡的趨勢 ([Quora 討論串](https://www.quora.com/Which-university-is-better-for-a-computer-science-Masters-degree-UCSD-or-UCLA))
         
         ---
-        .left-column[
-          ## Presenter mode
-          ### - Inline notes
-        ]
-        .right-column[
-        Just like three dashes separate slides,
-        three question marks separate slide content from slide notes:
+   
+        ## USC MSCS
+        - CS下分很多programs，最多可以申2個
+          - General CS
+          - Data Science
+          - Game Development
+          - Computer Security
+          - Computer Networks
+          - Software Engineering
+          - Intelligent Robotics
+          - Multimedia and Creative Technologies
+          - High Performance Computing and Simulation
+          - Scientists and Engineers (CS37)
+        - 學校強烈建議非本科的申請CS37，多修很多學分很貴，學校發大財
         
-        ```
-        Slide 1 content
-        
-        *???
-        
-        Slide 1 notes
+        ## UCI MSCS
+        - UCI MSCS 2018 收很多台灣人，系上有2個學長姊有上
+        - 錄取標準很謎，今年台灣人幾乎全滅
         
         ---
+        ## GaTech MSCS
+        - 學費便宜，專排高，印度人的夢幻學校
+        - 地理位置差，治安不好
+
+        ## Harvard MSCS
+        - 收的人很少
+
+        ## Rice MCS
+        - 坤叔今年去的學校，轉專業友善
+        - 女生實習表現非常好，全部都有拿到FB面試
         
-        Slide 2 content
-        
-        *???
-        
-        Slide 2 notes
-        ```
-        
-        Slide notes are also treated as Markdown, and will be converted in the
-        same manner slide content is.
-        
-        Pressing __P__ will toggle presenter mode.
-        ]
-        ???
-        Congratulations, you just toggled presenter mode!
-        
-        Now press __P__ to toggle it back off.
-        ---
-        .left-column[
-          ## Presenter mode
-          ### - Inline notes
-          ### - Cloned view
-        ]
-        .right-column[
-        Presenter mode of course makes no sense to the audience.
-        
-        Creating a cloned view of your slideshow lets you:
-        
-        - Move the cloned view to the extended display visible to the audience
-        
-        - Put the original slideshow in presenter mode
-        
-        - Navigate as usual, and the cloned view will automatically keep up with the original
-        
-        Pressing __C__ will open a cloned view of the current slideshow in a new
-        browser window.
-        ]
+        ## UW Madison PMP 
+        - MSCS 研究型Program沒paper很難上
+        - PMP(Professional Master's Program)，學位一樣只是沒獎不能當RA/TA
+        - 似乎對轉專業友善
         ---
         template: inverse
         
-        ## It's time to get started!
+        ## FAQ
+        ### [Any question so far?]
         ---
-        .left-column[
-          ## Getting started
-        ]
-        .right-column[
-        Getting up and running is done in only a few steps:
-        
-        1. Visit the [project site](http://github.com/gnab/remark)
-        
-        2. Follow the steps in the Getting Started section
-        
-        For more information on using remark, please check out the [wiki](https://github.com/gnab/remark/wiki) pages.
-        ]
-        ---
-        name: last-page
-        template: inverse
-        
-        ## That's all folks (for now)!
-        
-        Slideshow created using [remark](http://github.com/gnab/remark).
-            
+        class: center, middle
+        # More at
+        ### [tinyurl.com/ntuimapply](https://github.com/CryoliteZ/slides/tree/master/apply)
+        ![](https://i.imgur.com/aQ5kbsG.png)
+       
 
     </textarea>
    
@@ -843,7 +855,7 @@
         if (screen.width < screen.height){
           const div = document.createElement('div')
           div.className = 'toast';
-          div.innerHTML = 'Rotate the screen for better user experience!' 
+          div.innerHTML = '[Phone Users] If you expereince overlapping text, rotate the screen for better user experience!' 
           setTimeout(function(){
             div.remove()
           }, 10000);
