@@ -2,7 +2,12 @@
 
 Slides about applying CS graduate school as an NTU Information Management major student
 
-*[2020 Update](https://cryolitez.github.io/slides/apply/#32)
+2020 Update
+
+* PTT StudyAbroad 客製化查文工具: [cryolite.me/studyabroad](https://cryolite.me/studyabroad/)
+
+* [更新資訊](https://cryolitez.github.io/slides/apply/#32)
+
 
 ### Presentation
 2019/5/21@NTUIM 台大資管系出國留學經驗分享會
