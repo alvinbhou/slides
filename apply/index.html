@@ -991,6 +991,9 @@
     </textarea>
 
   <script src="https://remarkjs.com/downloads/remark-latest.min.js"> </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116950961-6"></script>
+
   <script>
     let slideshow = remark.create({
       //   highlightStyle: 'monokai',
@@ -1011,6 +1014,15 @@
       }
     };
     roateDetect();
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116950961-6');
   </script>
 </body>
 
