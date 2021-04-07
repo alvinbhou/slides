@@ -1,4 +1,4 @@
-# New Grad Job Hunting [[link](https://alvinbhou.github.io/slides/blob/master/2021_New_Grad_Job_Hunting_Experience_Sharing.pdf)]
+# New Grad Job Hunting [[link](https://github.com/alvinbhou/slides/blob/master/newgrad/2021_New_Grad_Job_Hunting_Experience_Sharing.pdf)]
 
 Slides about New Grad MLE / SWE Preparation and Interview Experience Sharing
 
